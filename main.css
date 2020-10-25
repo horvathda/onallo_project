@@ -1,0 +1,28 @@
+/***
+*This CSS file is the main.
+*Include the imported CSS files.
+*
+*
+*RESET.CSS         Meyer's CSS reset.
+*CONTAINER.CSS     base layout/grid/.
+*HEADER.CSS        header layout.
+*BUTTON.CSS        all buttons style.
+*LEFT-RIGHT.CSS    left and right side picture and slogen layout and styles.
+*MAIN-SECTION.CSS  main section style and layout.
+*FOOTER.CSS        footer layout and style
+***/
+
+
+
+@import url("contents/reset.css");
+@import url("contents/container.css");
+@import url("contents/header.css");
+@import url("contents/button.css");
+@import url("contents/left-right.css");
+@import url("contents/main-section.css");
+@import url("contents/footer.css");
+
+
+
+
+

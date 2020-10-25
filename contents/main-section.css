@@ -1,0 +1,139 @@
+/***
+*main section settings
+*About
+*News
+*
+*/
+
+
+/*--------------*\
+    base style
+\*--------------*/
+
+
+main{
+  margin:      2% auto;
+  color:       var(--main-bg-color);
+}
+
+
+.parts{
+  margin:      5% auto;
+}
+
+
+main section{
+  width:       80%;
+  margin:      auto;  
+}
+
+
+
+/*ABOUT section*/
+
+
+.about{
+  display:          flex;
+  flex-flow:        row;
+  justify-content:  flex-start;
+  padding-bottom:   5%;
+  margin-top:       -2rem;
+}
+
+
+.about__right, .about__left{
+  width:          80%;
+  padding:        5%;
+}
+
+
+
+
+
+/*ship background*/
+
+
+.about{
+  background-image:          url(/assets/192-1925856_jackdaw-assassins-creed-black-flag-wallpaper-hd.jpg);
+  background-position:       10% 95%;
+  background-size:           49%;
+  background-repeat:         no-repeat;
+}
+
+
+
+
+
+/*main section's titles*/
+
+
+.part__title{
+  font-family:        "Assassin", sans-serif;
+  font-size:          5rem;
+  text-align:         center;
+  height:             5rem;
+  margin-top:         2rem;
+  border-bottom:      2px solid var(--main-bg-color);
+}
+
+
+.part__title--small{
+  font-family:        "Assassin", sans-serif;
+  font-size:          2.5rem;
+  text-align:         center;
+  margin-bottom:      1rem;
+  margin-top:         4rem;
+}
+
+
+/*main section's text and tipography*/
+
+
+.part__text{
+  text-align:        justify;
+  font-size:         1.2rem;
+  line-height:       1.5;
+  background-color:  #ffff;
+  padding:           10px;
+  
+}
+
+
+
+
+
+/*-------------*\
+  MOBILE LAYOUT
+\*-------------*/
+
+@media(max-width:1024px){
+  
+  main section{
+    width:                95%;
+  }
+  
+  
+  .about{
+    flex-flow:             column;
+    width:                 100%;
+    background-size:       70vw;
+    background-position:   20% 35%;
+  }
+  
+  
+  .about__right, .about__left{
+    width:                 100%;
+  }
+  
+  .about__left{
+    margin-bottom:         10rem;
+  }
+}
+ 
+
+@media(max-width:786px){
+  .about{
+    background-size:       100%;
+    background-position:   25% 40%;
+  }
+}

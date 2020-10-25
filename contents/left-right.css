@@ -1,0 +1,79 @@
+/***
+*On the left side is a pirate, on the right side are a logo, and a slogen. 
+
+*/
+
+.left {
+  height:          var(--main-height);
+}
+
+.background{
+  height:          var(--main-height);
+
+}
+
+.right {  
+  display:         flex;
+  flex-flow:       row;
+  text-align:      center;
+
+}
+
+.right img {
+  width:           18rem;
+  margin:          auto;
+  opacity:         60%;
+}
+
+.right h1 {
+  width:          40vw;
+  margin:         auto;
+  font-family:    "Assassin", sans-serif; 
+  font-size:      4rem;
+  color:          var(--main-bg-color);
+}
+
+
+
+
+
+/*------------------*\
+     MOBILE LAYOUT
+\*------------------*/
+
+
+@media(max-width:1024px){
+  .right{
+    width:          80%;
+    margin-bottom:  -5vh;
+    margin-left:    15vw;
+      
+  }
+}
+
+@media(max-width:768px){
+  .right{
+    flex-flow:       column-reverse;
+    width:           100vw;
+    margin:          0;
+  }
+  
+  
+  .right h1{
+    width:           100%
+  }
+
+}
+
+
+/*line after the section*/
+
+.left::after{
+  position:           absolute;
+  width:              100%;
+  content:            "";
+  border-top:         2px solid var(--main-bg-color);
+  z-index:            1;
+  top:                100vh;
+  left:               0;
+}

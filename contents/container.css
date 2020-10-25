@@ -1,0 +1,86 @@
+/*------------*\
+    VARIABLES
+\*------------*/
+
+
+:root {
+  --main-bg-color:   rgba(0, 0, 0, .5);/*dark grey*/
+  --main-height:     calc(100vh - 70px);
+  --main-color:      rgba(255, 255, 255, 0.7);/*light gray*/
+}
+
+
+
+/*-------------*\
+      FONTS
+\*-------------*/
+
+
+
+@font-face {
+  font-family:       "Assassin";
+  src:                url("/assets/fonts/assassin.ttf");
+}
+
+
+
+
+
+/*------------------*\
+        LAYOUT         
+\*------------------*/
+
+* {
+  box-sizing:             border-box;
+}
+
+.container {
+  display:                 grid;
+  grid-template-columns:   50% 50%;
+  grid-template-rows:      1fr auto;
+  grid-template-areas:
+    "header header"
+    "left right"
+    "main main"
+    "footer footer";
+  font-family:             "Roboto", sans-serif;
+}
+
+
+
+
+/*--------------*\
+   MOBILE LAYOUT
+\*--------------*/
+
+@media (max-width: 1024px) {
+  .container {
+    width:                 100%;
+    height:                auto;
+    grid-template-columns: 1fr;
+    grid-template-rows:    repeat (4, 1fr);
+    grid-template-areas:
+      "header"
+      "right"
+      "main"
+      "footer";
+  }
+
+  .left {
+    display: none;
+
+  }
+}
+
+
+
+
+
+/***GRID AREAS***/
+
+
+header {grid-area:    header;}
+.left {grid-area:     left;}
+.right {grid-area:    right;}
+main {grid-area:      main;}
+footer {grid-area:    footer;}

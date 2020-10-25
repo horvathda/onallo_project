@@ -1,0 +1,50 @@
+/* header :
+*layout 
+*style
+*menu */
+
+header{
+  height:          70px;
+}
+
+nav ul{
+  list-style-type: none;
+  display:         flex;
+  justify-content: flex-end;
+
+}
+
+nav li{
+  display:          inline;
+}
+
+
+.header__btn{
+  float:            right;
+}
+
+.header__btn--sign_up{
+  float:            left;
+
+}
+
+
+
+/*------MMOBILE LAYOUT-------*/
+
+@media (max-width: 1024px) {
+  header {
+    width:          100%;
+    height:         auto;
+  }
+  
+  
+  nav ul{
+  display:          inherit;
+  justify-content:  flex-start;
+  align-content:    flex-start;
+    
+    
+  }
+ 
+}
